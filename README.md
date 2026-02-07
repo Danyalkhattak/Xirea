@@ -43,7 +43,7 @@ Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-
 
 | Home | Chat | Models | Settings |
 |------|------|--------|----------|
-| ![Home](screenshots/home.png) | ![Chat](screenshots/chat.png) | ![Models](screenshots/models.png) | ![Settings](screenshots/settings.png) |
+| ![Home](screenshots/home.jpeg) | ![Chat](screenshots/chat.jpeg) | ![Models](screenshots/models.jpeg) | ![Settings](screenshots/settings.jpeg) |
 
 ---
 
