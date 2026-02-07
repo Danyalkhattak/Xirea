@@ -66,7 +66,13 @@ Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-
 
 ### Download
 
-Download the latest APK from the [Releases](https://github.com/Danyalkhattak/xirea/releases) page.
+<p align="center">
+  <a href="https://github.com/Danyalkhattak/xirea/releases/latest/download/Xirea-v1.0.0.apk">
+    <img src="https://img.shields.io/badge/Download_APK-v1.0.0-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50"/>
+  </a>
+</p>
+
+Or browse all versions on the [Releases](https://github.com/Danyalkhattak/xirea/releases) page.
 
 ---
 
