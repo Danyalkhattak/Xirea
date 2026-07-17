@@ -57,6 +57,30 @@ class LlamaCpp {
         maxTokens: Int = 512,
         callback: TokenCallback
     ): String
+
+    /**
+     * Format a conversation (system/user/assistant messages) into a single
+     * prompt string using llama.cpp's own chat template machinery.
+     *
+     * If the loaded GGUF has an embedded chat template, that exact template
+     * is used. If not, llama.cpp's own generic "chatml" fallback template is
+     * used (this is llama.cpp's built-in fallback, not a per-model format
+     * hardcoded here). Nothing about a specific model family - TinyLlama,
+     * Gemma, Phi, Qwen, etc. - is hardcoded in this call.
+     *
+     * @param roles Parallel array of message roles, e.g. "system"/"user"/"assistant"
+     * @param contents Parallel array of message contents (same length as [roles])
+     * @param addAssistantPrompt Whether to append the tokens that open a new
+     *   assistant turn (should be true when about to generate a reply)
+     * @return The formatted prompt string, or an empty string if the template
+     *   could not be applied (caller should fall back to a plain-text prompt
+     *   in that case).
+     */
+    external fun formatChatPrompt(
+        roles: Array<String>,
+        contents: Array<String>,
+        addAssistantPrompt: Boolean = true
+    ): String
     
     /**
      * Get information about the loaded model.
