@@ -19,6 +19,7 @@
 
 <p align="center">
   <a href="#overview">Overview</a> &bull;
+  <a href="#platforms">Platforms</a> &bull;
   <a href="#whats-new-in-v2">What's New</a> &bull;
   <a href="#features">Features</a> &bull;
   <a href="#screenshots">Screenshots</a> &bull;
@@ -35,6 +36,15 @@
 **Xirea** is a fully offline AI chat assistant that runs lightweight language models directly on your Android device. No internet required, no API keys, no data leaving your phone &mdash; your conversations stay completely private.
 
 Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-device inference with GGUF models.
+
+---
+
+## Platforms
+
+| Platform | Status | Repository |
+|----------|--------|------------|
+| 📱 Android | ✅ Stable | https://github.com/Danyalkhattak/Xirea |
+| 🖥️ Desktop | 🚧 In Development | https://github.com/Danyalkhattak/Xirea-Desktop |
 
 ---
 
