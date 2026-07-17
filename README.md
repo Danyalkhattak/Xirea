@@ -38,7 +38,7 @@ Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-
 
 ---
 
-## What's New in v2.0.0
+## What's New in v2.0.0?
 
 ### Local Model Persistence with Loading Indicator
 
