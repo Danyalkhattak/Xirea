@@ -14,14 +14,17 @@
   <a href="#"><img src="https://img.shields.io/badge/Platform-Android-34A853?style=for-the-badge&logo=android&logoColor=white" alt="Platform"/></a>
   <a href="#"><img src="https://img.shields.io/badge/API-26+-FF6F00?style=for-the-badge&logo=android&logoColor=white" alt="API"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Offline-100%25-EF4444?style=for-the-badge&logo=shieldsdotio&logoColor=white" alt="Offline"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Version-2.0.0-818CF8?style=for-the-badge&logo=semanticweb&logoColor=white" alt="Version"/></a>
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#screenshots">Screenshots</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#building">Building</a> •
-  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#overview">Overview</a> &bull;
+  <a href="#whats-new-in-v2">What's New</a> &bull;
+  <a href="#features">Features</a> &bull;
+  <a href="#screenshots">Screenshots</a> &bull;
+  <a href="#installation">Installation</a> &bull;
+  <a href="#building">Building</a> &bull;
+  <a href="#tech-stack">Tech Stack</a> &bull;
   <a href="#license">License</a>
 </p>
 
@@ -29,21 +32,57 @@
 
 ## Overview
 
-**Xirea** is a fully offline AI chat assistant that runs lightweight language models directly on your Android device. No internet required, no API keys, no data leaving your phone — your conversations stay completely private.
+**Xirea** is a fully offline AI chat assistant that runs lightweight language models directly on your Android device. No internet required, no API keys, no data leaving your phone &mdash; your conversations stay completely private.
 
 Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-device inference with GGUF models.
 
 ---
 
+## What's New in v2.0.0
+
+### Local Model Persistence with Loading Indicator
+
+Models are now stored persistently on-device after the first download. Once loaded, they remain available for instant reuse without re-downloading. A real-time **notification progress indicator** shows the exact percentage of model loading completion so you always know the status.
+
+### Redesigned Theme System
+
+A completely refreshed color palette for both **light and dark themes**:
+
+| Theme | Description |
+|-------|-------------|
+| **Light** | Rich Indigo primary (`#4F46E5`), Teal secondary (`#0D9488`), Fuchsia tertiary (`#D946EF`) on a clean off-white surface (`#F8FAFC`) |
+| **Dark** | Soft Indigo primary (`#818CF8`), Bright Teal secondary (`#2DD4BF`), Bright Fuchsia tertiary (`#E879F9`) on a deep midnight background (`#0B0F1A`) |
+
+The design also features improved spacing, refined typography using the full Material 3 type scale, and a polished visual identity across every screen.
+
+### Voice Input
+
+A built-in **voice input button** on the chat screen lets you dictate your prompt using Android's speech recognition. Your spoken words are automatically transcribed and inserted into the chat input field &mdash; no typing required.
+
+### UI/UX Overhaul
+
+- Redesigned navigation and screen transitions
+- Improved chat bubble styling with clearer visual hierarchy
+- Better model management interface with storage tracking
+- Enhanced code block rendering with a copy button
+- Markdown support with tables, task lists, and strikethrough
+- Edge-to-edge immersive display
+- Crash reporting system for stability
+
+---
+
 ## Features
 
-- <img src="https://img.shields.io/badge/-Offline-EF4444?style=flat-square&logo=wifioff&logoColor=white" height="18"/> **100% Offline** — All AI processing happens on-device
-- <img src="https://img.shields.io/badge/-Fast-F59E0B?style=flat-square&logo=bolt&logoColor=white" height="18"/> **Fast Inference** — Optimized for mobile with dynamic RAM scaling
-- <img src="https://img.shields.io/badge/-Chat-3B82F6?style=flat-square&logo=googlechat&logoColor=white" height="18"/> **Chat History** — Persistent local storage with Room database
-- <img src="https://img.shields.io/badge/-Models-8B5CF6?style=flat-square&logo=huggingface&logoColor=white" height="18"/> **Model Management** — Download, switch, and delete AI models
-- <img src="https://img.shields.io/badge/-Dark_Mode-1E293B?style=flat-square&logo=darkreader&logoColor=white" height="18"/> **Dark Mode** — Beautiful Material3 light and dark themes
-- <img src="https://img.shields.io/badge/-Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" height="18"/> **Modern UI** — Built with Jetpack Compose
-- <img src="https://img.shields.io/badge/-Private-10B981?style=flat-square&logo=shieldsdotio&logoColor=white" height="18"/> **Privacy First** — No data collection, no servers, no tracking
+- <img src="https://img.shields.io/badge/-Offline-EF4444?style=flat-square&logo=wifioff&logoColor=white" height="18"/> **100% Offline** &mdash; All AI processing happens on-device
+- <img src="https://img.shields.io/badge/-Fast-F59E0B?style=flat-square&logo=bolt&logoColor=white" height="18"/> **Fast Inference** &mdash; Optimized for mobile with dynamic RAM scaling
+- <img src="https://img.shields.io/badge/-Persistent-10B981?style=flat-square&logo=database&logoColor=white" height="18"/> **Local Model Storage** &mdash; Download once, use forever; progress %age in notification
+- <img src="https://img.shields.io/badge/-Voice-6366F1?style=flat-square&logo=microphone&logoColor=white" height="18"/> **Voice Input** &mdash; Dictate prompts directly into the chat
+- <img src="https://img.shields.io/badge/-Chat-3B82F6?style=flat-square&logo=googlechat&logoColor=white" height="18"/> **Chat History** &mdash; Persistent local storage with Room database
+- <img src="https://img.shields.io/badge/-Models-8B5CF6?style=flat-square&logo=huggingface&logoColor=white" height="18"/> **Model Management** &mdash; Download, import, switch, and delete AI models
+- <img src="https://img.shields.io/badge/-Themes-D946EF?style=flat-square&logo=palette&logoColor=white" height="18"/> **Refined Themes** &mdash; Beautiful indigo/teal/fuchsia palette for light and dark
+- <img src="https://img.shields.io/badge/-Markdown-4285F4?style=flat-square&logo=markdown&logoColor=white" height="18"/> **Markdown Rendering** &mdash; Tables, code blocks with copy, task lists, strikethrough
+- <img src="https://img.shields.io/badge/-Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white" height="18"/> **Modern UI** &mdash; Built with Jetpack Compose & Material 3
+- <img src="https://img.shields.io/badge/-Private-10B981?style=flat-square&logo=shieldsdotio&logoColor=white" height="18"/> **Privacy First** &mdash; No data collection, no servers, no tracking
 
 ---
 
@@ -62,13 +101,13 @@ Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-
 - Android 8.0+ (API 26)
 - ARM64 device (arm64-v8a)
 - At least 4GB RAM recommended
-- Storage space for AI models (500MB - 4GB per model)
+- Storage space for AI models (500 MB &ndash; 4 GB per model)
 
 ### Download
 
 <p align="center">
-  <a href="https://github.com/Danyalkhattak/Xirea/releases/download/v1.0.0/app-release.apk">
-    <img src="https://img.shields.io/badge/Download_APK-v1.0.0-6366F1?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50"/>
+  <a href="https://github.com/Danyalkhattak/Xirea/releases/download/v2.0.0/Xirea-v2.0.0.apk">
+    <img src="https://img.shields.io/badge/Download_APK-v2.0.0-818CF8?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50"/>
   </a>
 </p>
 
@@ -90,30 +129,36 @@ Or browse all versions on the [Releases](https://github.com/Danyalkhattak/xirea/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Danyalkhattak/Xirea.git
-   cd xirea
+   cd Xirea
    ```
 
-2. **Open in Android Studio**
+2. **Set up llama.cpp**
+   ```bash
+   git clone https://github.com/ggerganov/llama.cpp.git app/src/main/cpp/llama.cpp
+   ```
+   See [LLAMA_SETUP.md](LLAMA_SETUP.md) for detailed instructions and build options.
+
+3. **Open in Android Studio**
    - Open the project folder in Android Studio
    - Wait for Gradle sync to complete
 
-3. **Build Debug APK**
+4. **Build Debug APK**
    ```bash
    ./gradlew assembleDebug
    ```
 
-4. **Build Release APK** (requires signing keystore)
+5. **Build Release APK** (requires signing keystore)
    ```bash
    ./gradlew assembleRelease
    ```
 
-  Set signing properties in `local.properties`:
-  ```
-  RELEASE_STORE_FILE=path/to/keystore.jks
-  RELEASE_STORE_PASSWORD=your_store_password
-  RELEASE_KEY_ALIAS=your_key_alias
-  RELEASE_KEY_PASSWORD=your_key_password
-  ```
+   Set signing properties in `local.properties`:
+   ```
+   RELEASE_STORE_FILE=path/to/keystore.jks
+   RELEASE_STORE_PASSWORD=your_store_password
+   RELEASE_KEY_ALIAS=your_key_alias
+   RELEASE_KEY_PASSWORD=your_key_password
+   ```
 
 The APK will be generated at `app/build/outputs/apk/`
 
@@ -128,7 +173,8 @@ The APK will be generated at `app/build/outputs/apk/`
   <img src="https://img.shields.io/badge/Room_DB-4285F4?style=for-the-badge&logo=sqlite&logoColor=white" alt="Room"/>
   <img src="https://img.shields.io/badge/Material3-6750A4?style=for-the-badge&logo=materialdesign&logoColor=white" alt="Material3"/>
   <img src="https://img.shields.io/badge/Coroutines-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Coroutines"/>
-  <img src="https://img.shields.io/badge/MVVM-FF6F00?style=for-the-badge&logo=android&logoColor=white" alt="MVVM"/>
+  <img src="https://img.shields.io/badge/DataStore-018786?style=for-the-badge&logo=android&logoColor=white" alt="DataStore"/>
+  <img src="https://img.shields.io/badge/Markwon-4B5563?style=for-the-badge&logo=markdown&logoColor=white" alt="Markwon"/>
 </p>
 
 ---
@@ -139,50 +185,70 @@ Xirea works with GGUF format models. Recommended models for mobile:
 
 | Model | Size | RAM Required |
 |-------|------|--------------|
-| Qwen2.5 0.5B Q4 | ~400MB | 4GB |
-| Qwen2.5 1.5B Q4 | ~1GB | 6GB |
-| Llama 3.2 1B Q4 | ~700MB | 4GB |
-| Phi-3 Mini Q4 | ~2GB | 8GB |
-| Gemma 2B Q4 | ~1.5GB | 6GB |
+| Qwen2 0.5B Q4 | ~400 MB | 4 GB |
+| TinyLlama 1.1B Q4 | ~669 MB | 4 GB |
+| Phi-2 2.7B Q4 | ~1.6 GB | 6 GB |
+| Gemma 2B Q4 | ~1.5 GB | 6 GB |
+
+You can also **import any local GGUF model** from your device storage via the model management screen.
 
 ---
 
 ## Performance Optimization
 
-Xirea automatically optimizes for your device:
+Xirea automatically adapts to your device hardware:
 
-| Device RAM | Context Size | Batch Size |
-|------------|--------------|------------|
-| 4GB | 512 | 128 |
-| 6GB | 768 | 256 |
-| 8GB | 1024 | 256 |
-| 12GB+ | 2048 | 512 |
+| Device RAM | Context Size | Batch Size | Threads |
+|------------|--------------|------------|---------|
+| 4 GB | 512 | 128 | 2 |
+| 6 GB | 768 | 256 | 4 |
+| 8 GB | 1024 | 256 | 6 |
+| 12 GB+ | 2048 | 512 | 8 |
 
-- **CPU-only inference** for maximum compatibility
+- **CPU-only inference** for maximum device compatibility
 - **Memory-mapped model loading** for reduced RAM usage
-- **Pre-allocated batch buffers** for zero-allocation generation
-- **Near-greedy sampling** for faster token generation
+- **Pre-allocated batch buffers** for zero-allocation generation loops
+- **Near-greedy sampling** (top-k=20, top-p=0.85, temp=0.6) for focused, fast responses
+- **Streaming token output** with ~33 ms throttle for smooth UI updates
+- **Token guard buffer** to prevent partial stop-sequence artifacts
 
 ---
 
 ## Project Structure
 
 ```
-xirea/
-├── app/
-│   ├── src/main/
-│   │   ├── java/com/dannyk/xirea/
-│   │   │   ├── ai/          # AI engine & llama.cpp wrapper
-│   │   │   ├── data/        # Room database & repositories
-│   │   │   ├── service/     # Download service
-│   │   │   └── ui/          # Compose UI screens
-│   │   ├── cpp/             # Native C++ code
-│   │   │   ├── llama.cpp/   # llama.cpp library
-│   │   │   └── llama_jni.cpp # JNI bridge
-│   │   └── res/             # Resources
-│   └── build.gradle.kts
-├── gradle/
-│   └── libs.versions.toml   # Version catalog
+Xirea/
+├── app/src/main/
+│   ├── java/com/dannyk/xirea/
+│   │   ├── ai/                 # AI engine & llama.cpp JNI wrapper
+│   │   │   ├── AIEngine.kt     # High-level generation with ChatML prompts
+│   │   │   └── LlamaCpp.kt     # JNI bridge class
+│   │   ├── data/
+│   │   │   ├── dao/            # Room DAOs (Chat, Message, AIModel)
+│   │   │   ├── database/       # XireaDatabase (Room, migration v2)
+│   │   │   ├── download/       # ModelDownloader (Flow-based progress)
+│   │   │   ├── model/          # Entity classes (Chat, Message, AIModel)
+│   │   │   ├── preferences/    # UserPreferences (DataStore)
+│   │   │   └── repository/     # ChatRepository, ModelRepository
+│   │   ├── navigation/         # Screen routes & XireaNavGraph
+│   │   ├── service/            # Foreground download service with notifications
+│   │   ├── ui/
+│   │   │   ├── about/          # About screen
+│   │   │   ├── chat/           # Chat screen & ViewModel
+│   │   │   ├── components/     # MarkdownText composable (Markwon)
+│   │   │   ├── home/           # Home screen & ViewModel
+│   │   │   ├── models/         # Model management screen
+│   │   │   ├── report/         # Crash report screen
+│   │   │   ├── settings/       # Settings screen
+│   │   │   └── theme/          # Color palette, Theme, Typography
+│   │   └── util/               # VoiceInputHelper, CrashReporter
+│   ├── cpp/
+│   │   ├── CMakeLists.txt      # Native build configuration
+│   │   └── llama_jni.cpp       # C++ JNI bridge (~557 lines)
+│   └── res/                    # Android resources
+├── screenshots/                # App screenshots
+├── LLAMA_SETUP.md              # llama.cpp build guide
+├── gradle/libs.versions.toml   # Version catalog
 └── build.gradle.kts
 ```
 
@@ -202,7 +268,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License &mdash; see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -219,9 +285,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) — Excellent C++ inference engine
-- [Jetpack Compose](https://developer.android.com/jetpack/compose) — Modern Android UI toolkit
-- [Material3](https://m3.material.io/) — Design system
+- [llama.cpp](https://github.com/ggerganov/llama.cpp) &mdash; High-performance C++ LLM inference engine
+- [Jetpack Compose](https://developer.android.com/jetpack/compose) &mdash; Modern Android UI toolkit
+- [Material 3](https://m3.material.io/) &mdash; Design system
+- [Markwon](https://github.com/noties/Markwon) &mdash; Markdown rendering for Android
 
 ---
 
