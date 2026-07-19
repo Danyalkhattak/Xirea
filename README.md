@@ -15,6 +15,7 @@
   <a href="#"><img src="https://img.shields.io/badge/API-26+-FF6F00?style=for-the-badge&logo=android&logoColor=white" alt="API"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Offline-100%25-EF4444?style=for-the-badge&logo=shieldsdotio&logoColor=white" alt="Offline"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Version-2.0.0-818CF8?style=for-the-badge&logo=semanticweb&logoColor=white" alt="Version"/></a>
+  ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Danyalkhattak.Xirea)
 </p>
 
 <p align="center">
