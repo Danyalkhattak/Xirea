@@ -15,7 +15,9 @@
   <a href="#"><img src="https://img.shields.io/badge/API-26+-FF6F00?style=for-the-badge&logo=android&logoColor=white" alt="API"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Offline-100%25-EF4444?style=for-the-badge&logo=shieldsdotio&logoColor=white" alt="Offline"/></a>
   <a href="#"><img src="https://img.shields.io/badge/Version-2.0.0-818CF8?style=for-the-badge&logo=semanticweb&logoColor=white" alt="Version"/></a>
-  ![Visitors](https://api.visitorbadge.io/api/visitors?path=github.com/Danyalkhattak/Xirea&label=Visitors&countColor=%23697689)
+  <a align="center">
+  <img src="https://api.visitorbadge.io/api/visitors?path=Danyalkhattak/Xirea&label=Visitors" alt="Visitors">
+</a>
 </p>
 
 <p align="center">
