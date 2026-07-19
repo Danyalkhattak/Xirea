@@ -9,15 +9,33 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Danyalkhattak/xirea/releases"><img src="https://img.shields.io/github/v/release/Danyalkhattak/xirea?style=for-the-badge&logo=github&color=6366F1" alt="Release"/></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/Danyalkhattak/xirea?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=10B981" alt="License"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Platform-Android-34A853?style=for-the-badge&logo=android&logoColor=white" alt="Platform"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/API-26+-FF6F00?style=for-the-badge&logo=android&logoColor=white" alt="API"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Offline-100%25-EF4444?style=for-the-badge&logo=shieldsdotio&logoColor=white" alt="Offline"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Version-2.0.0-818CF8?style=for-the-badge&logo=semanticweb&logoColor=white" alt="Version"/></a>
-  <a align="center">
-  <img src="https://api.visitorbadge.io/api/visitors?path=Danyalkhattak/Xirea&label=Visitors" alt="Visitors">
-</a>
+  <a href="https://github.com/Danyalkhattak/Xirea/releases">
+    <img src="https://img.shields.io/github/v/release/Danyalkhattak/Xirea?style=for-the-badge&logo=github&color=6366F1" alt="Latest Release"/>
+  </a>
+
+  <a href="https://github.com/Danyalkhattak/Xirea/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Danyalkhattak/Xirea?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=10B981" alt="License"/>
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/badge/Platform-Android-34A853?style=for-the-badge&logo=android&logoColor=white" alt="Platform"/>
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/badge/API-26%2B-FF6F00?style=for-the-badge&logo=android&logoColor=white" alt="API"/>
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/badge/AI-Local%20%26%20Cloud-8B5CF6?style=for-the-badge&logo=openai&logoColor=white" alt="AI"/>
+  </a>
+
+  <a href="#">
+    <img src="https://img.shields.io/badge/Version-2.0.0-818CF8?style=for-the-badge&logo=semanticweb&logoColor=white" alt="Version"/>
+  </a>
+
+  <a href="https://github.com/Danyalkhattak/Xirea">
+    <img src="https://api.visitorbadge.io/api/visitors?path=Danyalkhattak/Xirea&label=Visitors&labelColor=6366F1&countColor=10B981" alt="Visitors"/>
+  </a>
 </p>
 
 <p align="center">
