@@ -65,7 +65,7 @@ Powered by [llama.cpp](https://github.com/ggerganov/llama.cpp) for efficient on-
 | Platform | Status | Repository |
 |----------|--------|------------|
 | 📱 Android | ✅ Stable | https://github.com/Danyalkhattak/Xirea |
-| 🖥️ Desktop | 🚧 In Development | https://github.com/Danyalkhattak/Xirea-Desktop |
+| 🖥️ Desktop | ✅ Stable | https://github.com/Danyalkhattak/Xirea-Desktop |
 
 ---
 
